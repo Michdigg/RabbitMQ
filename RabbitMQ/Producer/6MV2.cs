@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RabbitMQ.Model
+﻿namespace RabbitMQ.Producer
 {
-    public class _6MV2
+    public class _6MV2: Sensors
     {
         private int x { get; set; }
         private int y { get; set; }
@@ -16,7 +10,11 @@ namespace RabbitMQ.Model
         {
 
         }
-        
+
+        public int[] getValues()
+        {
+            return getCoordinates();
+        }
         public int[] getCoordinates()
         {
             int[] coordinates = new int[2];
@@ -27,7 +25,5 @@ namespace RabbitMQ.Model
             Console.WriteLine($"Coordinates: {x}, {y} ");
             return coordinates;
         }
-            
-
     }
 }

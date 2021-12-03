@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RabbitMQ.Model
+namespace RabbitMQ.Producer
 {
-    public class HC_SR501_PIR
+    public class HC_SR501_PIR: Sensors
     {
         public bool turning_on { get; set; }
         private Random rnd = new Random();
@@ -16,6 +16,10 @@ namespace RabbitMQ.Model
 
         }
 
+        public bool getValues()
+        {
+            return getMotion();
+        }
         public bool getMotion()
         {
             turning_on = rnd.NextDouble() >= 0.5;

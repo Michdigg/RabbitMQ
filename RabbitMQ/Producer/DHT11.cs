@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RabbitMQ.Model
+namespace RabbitMQ.Producer
 {
-    public class DHT11
+    public class DHT11: Sensors
     {
         private int temperature { get; set; }
         private int humidity { get; set; }
@@ -15,6 +15,14 @@ namespace RabbitMQ.Model
         public DHT11()
         {
 
+        }
+        public int getValue()
+        {
+            return getTemperature();
+        }
+        public int getValues()
+        {
+            return getHumidity();
         }
 
         public int getTemperature()
@@ -30,6 +38,7 @@ namespace RabbitMQ.Model
             Console.WriteLine($"Humidity:  { humidity }%");
             return humidity;
         }
-
+       
+        
     }
 }

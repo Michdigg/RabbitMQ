@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RabbitMQ.Model
+namespace RabbitMQ.Producer
 {
-    public class KY_018
+    public class KY_018: Sensors
     {
         private int brightness { get; set; }
         private Random rnd=new Random();
@@ -14,6 +14,10 @@ namespace RabbitMQ.Model
         public KY_018()
         {
 
+        }
+        public int getValues()
+        {
+            return getBrightness();
         }
 
         public int getBrightness() 
