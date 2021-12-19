@@ -1,17 +1,15 @@
-﻿namespace RabbitMQ.Producer
+﻿
+namespace Model
 {
-    public class _6MV2: Sensors
+    public class _6MV2 : Sensors
     {
         private int x { get; set; }
         private int y { get; set; }
         private Random rnd = new Random();
 
-        public _6MV2()
-        {
+        public _6MV2() {}
 
-        }
-
-        public int[] getValues()
+        public override int[] getValues()
         {
             return getCoordinates();
         }
@@ -24,6 +22,16 @@
             coordinates[1] = y;
             Console.WriteLine($"Coordinates: {x}, {y} ");
             return coordinates;
+        }
+
+        public override int getValue()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool get_Value()
+        {
+            throw new NotImplementedException();
         }
     }
 }
