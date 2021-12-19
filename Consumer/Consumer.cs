@@ -85,6 +85,7 @@ namespace RabbitMQ.Consumer
 
                     Console.WriteLine(" Consuming...");
                     Console.WriteLine(" Consuming...");
+                    Console.WriteLine(" Consuming...");
                     Thread.Sleep(5000);
                 }
             }
