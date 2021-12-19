@@ -1,7 +1,7 @@
 ﻿
 namespace Model
 {
-    public class DHT11 : Sensors
+    public class DHT11 : Sensor
     {
         private int temperature { get; set; }
         private int humidity { get; set; }

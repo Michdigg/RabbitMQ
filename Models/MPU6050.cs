@@ -1,7 +1,7 @@
 ﻿
 namespace Model
 {
-    public class MPU6050 : Sensors
+    public class MPU6050 : Sensor
     {
         private int inclination { get; set; }
         private int speed { get; set; }

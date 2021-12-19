@@ -1,7 +1,7 @@
 ﻿
 namespace Model
 {
-    public class KY_038 : Sensors
+    public class KY_038 : Sensor
     {
         private int volume { get; set; }
 

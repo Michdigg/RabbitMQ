@@ -11,6 +11,7 @@ namespace Producer
         {
             int[] humidityAndTemperature = dht11.getValues();
             int[] inclinationAndSpeed = mPU6050.getValues();
+            int[] coordinatesXandY = _6MV2.getValues();
 
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.humidity",
@@ -23,10 +24,15 @@ namespace Producer
                             mandatory: false,
                             body: Encoding.UTF8.GetBytes(humidityAndTemperature[0].ToString()));
             channel.BasicPublish(exchange: exchange_name,
-                            routingKey: "amq.coordinates",
+                            routingKey: "amq.coordinateX",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(_6MV2.getValues().ToString()));
+                            body: Encoding.UTF8.GetBytes(coordinatesXandY[0].ToString()));
+            channel.BasicPublish(exchange: exchange_name,
+                            routingKey: "amq.coordinateY",
+                            basicProperties: null,
+                            mandatory: false,
+                            body: Encoding.UTF8.GetBytes(coordinatesXandY[1].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.brightness",
                             basicProperties: null,
