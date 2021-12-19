@@ -7,7 +7,7 @@ namespace Model
 
         Random rnd = new Random();
 
-        public KY_038() {}
+        public KY_038() { }
 
         public override int getValue()
         {

@@ -7,7 +7,7 @@ namespace Model
         private int y { get; set; }
         private Random rnd = new Random();
 
-        public _6MV2() {}
+        public _6MV2() { }
 
         public override int[] getValues()
         {

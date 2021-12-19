@@ -6,7 +6,7 @@ namespace Model
         private int magnetic_field { get; set; }
 
         Random rnd = new Random();
-        public KY_024() {}
+        public KY_024() { }
 
         public override int getValue()
         {

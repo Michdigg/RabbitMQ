@@ -8,8 +8,8 @@ namespace Model
 
         private Random rnd = new Random();
 
-        public MPU6050() {}
- 
+        public MPU6050() { }
+
         public override int[] getValues()
         {
             int[] values = new int[2];
