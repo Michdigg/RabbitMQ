@@ -8,7 +8,7 @@ namespace Model
 
         private Random rnd = new Random();
 
-        public DHT11() {}
+        public DHT11() { }
         public override int[] getValues()
         {
             int[] values = new int[2];
@@ -18,7 +18,7 @@ namespace Model
             Console.WriteLine($"Humidity:  { humidity }%");
             return values;
         }
-        
+
 
         public int getTemperature()
         {
