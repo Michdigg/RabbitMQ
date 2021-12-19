@@ -1,28 +1,37 @@
 ﻿
 namespace Model
 {
-    public class _6MV2 : Sensors
+    public class _6MV2 : Sensor
     {
         private int x { get; set; }
         private int y { get; set; }
+
         private Random rnd = new Random();
 
         public _6MV2() { }
 
         public override int[] getValues()
         {
-            return getCoordinates();
+            int[] values = new int[2];
+            values[0] = getCoordinatex();
+            values[1] = getCoordinatey();
+            Console.WriteLine($"X:  { x }");
+            Console.WriteLine($"Y:  { y } ");
+            return values;
         }
-        public int[] getCoordinates()
+
+        public int getCoordinatex()
         {
-            int[] coordinates = new int[2];
             x = rnd.Next(0, 100);
-            y = rnd.Next(0, 100);
-            coordinates[0] = x;
-            coordinates[1] = y;
-            Console.WriteLine($"Coordinates: {x}, {y} ");
-            return coordinates;
+            return x;
         }
+
+        public int getCoordinatey()
+        {
+            y = rnd.Next(0, 100);
+            return y;
+        }
+
 
         public override int getValue()
         {

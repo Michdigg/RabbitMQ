@@ -1,7 +1,7 @@
 ﻿
 namespace Model
 {
-    public class KY_024 : Sensors
+    public class KY_024 : Sensor
     {
         private int magnetic_field { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace Model
 {
-    public class HC_SR501_PIR : Sensors
+    public class HC_SR501_PIR : Sensor
     {
         public bool turning_on { get; set; }
 
