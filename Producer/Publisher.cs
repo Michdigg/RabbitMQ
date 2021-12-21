@@ -62,7 +62,7 @@ namespace Producer
                             routingKey: "amq.motion",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(hC_SR501_PIR.get_Value().ToString()));
+                            body: Encoding.UTF8.GetBytes(hC_SR501_PIR.getValueBool().ToString()));
         }
     }
 }

@@ -3,42 +3,30 @@ namespace Model
 {
     public class _6MV2 : Sensor
     {
-        private int x { get; set; }
-        private int y { get; set; }
-
         private Random rnd = new Random();
 
         public _6MV2() { }
 
+        /// <summary>
+        /// Method that return x and y coordinates
+        /// </summary>
+        /// <returns>int[] values</returns>
         public override int[] getValues()
         {
-            int[] values = new int[2];
-            values[0] = getCoordinatex();
-            values[1] = getCoordinatey();
-            Console.WriteLine($"X:  { x }");
-            Console.WriteLine($"Y:  { y } ");
-            return values;
+            int[] coordinates = new int[2];
+            coordinates[0] = rnd.Next(0, 100); 
+            coordinates[1] = rnd.Next(0, 100); 
+            Console.WriteLine($"X:  { coordinates[0] }");
+            Console.WriteLine($"Y:  { coordinates[1] } ");
+            return coordinates;
         }
-
-        public int getCoordinatex()
-        {
-            x = rnd.Next(0, 100);
-            return x;
-        }
-
-        public int getCoordinatey()
-        {
-            y = rnd.Next(0, 100);
-            return y;
-        }
-
 
         public override int getValue()
         {
             throw new NotImplementedException();
         }
 
-        public override bool get_Value()
+        public override bool getValueBool()
         {
             throw new NotImplementedException();
         }

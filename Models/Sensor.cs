@@ -5,7 +5,7 @@ namespace Model
     {
         public abstract int[] getValues();
         public abstract int getValue();
-        public abstract bool get_Value();
+        public abstract bool getValueBool();
 
     }
 }

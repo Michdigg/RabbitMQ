@@ -3,20 +3,13 @@ namespace Model
 {
     public class KY_038 : Sensor
     {
-        private int volume { get; set; }
-
         Random rnd = new Random();
 
         public KY_038() { }
 
         public override int getValue()
         {
-            return getVolume();
-        }
-
-        public int getVolume()
-        {
-            volume = rnd.Next(0, 1023);
+            int volume = rnd.Next(0, 1023);
             Console.WriteLine($"Volume: {volume}");
             return volume;
         }
@@ -26,7 +19,7 @@ namespace Model
             throw new NotImplementedException();
         }
 
-        public override bool get_Value()
+        public override bool getValueBool()
         {
             throw new NotImplementedException();
         }

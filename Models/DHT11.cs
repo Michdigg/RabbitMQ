@@ -3,33 +3,17 @@ namespace Model
 {
     public class DHT11 : Sensor
     {
-        private int temperature { get; set; }
-        private int humidity { get; set; }
-
         private Random rnd = new Random();
 
         public DHT11() { }
         public override int[] getValues()
         {
-            int[] values = new int[2];
-            values[0] = getHumidity();
-            values[1] = getTemperature();
-            Console.WriteLine($"Temperature:  { temperature }°C");
-            Console.WriteLine($"Humidity:  { humidity }%");
-            return values;
-        }
-
-
-        public int getTemperature()
-        {
-            temperature = rnd.Next(25, 68);
-            return temperature;
-        }
-
-        public int getHumidity()
-        {
-            humidity = rnd.Next(20, 90);
-            return humidity;
+            int[] temperatureAndHumidity = new int[2];
+            temperatureAndHumidity[0] = rnd.Next(25, 68);
+            temperatureAndHumidity[1] = rnd.Next(20, 90);
+            Console.WriteLine($"Temperature:  { temperatureAndHumidity[0] }°C");
+            Console.WriteLine($"Humidity:  { temperatureAndHumidity[1] }%");
+            return temperatureAndHumidity;
         }
 
         public override int getValue()
@@ -37,7 +21,7 @@ namespace Model
             throw new NotImplementedException();
         }
 
-        public override bool get_Value()
+        public override bool getValueBool()
         {
             throw new NotImplementedException();
         }
