@@ -73,9 +73,9 @@ namespace RabbitMQ.Consumer
             return int.Parse(Encoding.UTF8.GetString(channel.BasicGet("amq_magneticfield", true).Body.ToArray()));
         }
 
-        public static int consumeMotion()
+        public static bool consumeMotion()
         {
-            return int.Parse(Encoding.UTF8.GetString(channel.BasicGet("amq_motion", true).Body.ToArray()));
+            return bool.Parse(Encoding.UTF8.GetString(channel.BasicGet("amq_motion", true).Body.ToArray()));
         }
 
         public static int consumeSpeed()
