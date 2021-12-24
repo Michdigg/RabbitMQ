@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace Model
 {
     public class MPU6050 : Sensor

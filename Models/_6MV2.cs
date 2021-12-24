@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace Model
 {
     public class _6MV2 : Sensor

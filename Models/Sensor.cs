@@ -1,5 +1,4 @@
-﻿
-namespace Model
+﻿namespace Model
 {
     public abstract class Sensor
     {
