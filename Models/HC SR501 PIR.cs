@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Model
 {
     public class HC_SR501_PIR : Sensor

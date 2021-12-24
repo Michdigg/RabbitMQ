@@ -2,6 +2,7 @@
 using Model;
 using RabbitMQ.Client;
 using System.Text;
+using System;
 
 namespace Producer
 {

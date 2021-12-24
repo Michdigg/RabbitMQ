@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Model
 {
     public class DHT11 : Sensor

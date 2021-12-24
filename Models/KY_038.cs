@@ -1,4 +1,6 @@
 ﻿
+using System;
+
 namespace Model
 {
     public class KY_038 : Sensor
