@@ -32,7 +32,7 @@ namespace RabbitMQ.Producer
                 {
                     Publisher.publish(channel, exchange_name, dht11, kY_018, kY_024, kY_038, hC_SR501_PIR, _6MV2, mPU6050);
                     Console.WriteLine("-----------------------------------------------------------------------");
-                    Thread.Sleep(500);
+                    Thread.Sleep(1000);
                 }
 
             }
