@@ -1,5 +1,4 @@
-﻿using Model;
-
+﻿
 namespace RabbitMQ.Consumer
 {
     public static class SecondScenarioRule
@@ -19,14 +18,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool secondCheckRule()
         {
-            bool check;
-            if ( Consumer.consumeInclination() > 10000 && Consumer.consumeSpeed() > 10000 )
-            {
-                check = true;
-            } else {
-                check = false;
-            }
-            return check;
+            return Consumer.consumeInclination() > 10000 && Consumer.consumeSpeed() > 10000;
         }
     }
 }
