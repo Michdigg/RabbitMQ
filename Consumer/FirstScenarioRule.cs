@@ -10,14 +10,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool firtCheckRule()
         {
-            if (Consumer.consumeTemperature() > 59 && Consumer.consumeBrightness() < 400) ;
-            {
-                check = true;
-            }else
-            {
-                check = false;
-            }
-            return check;
+            return (Consumer.consumeTemperature() > 59 && Consumer.consumeBrightness() < 400) ;
         }
 
         /// <summary>
@@ -26,15 +19,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool secondCheckRule()
         {
-            if (Consumer.consumeVolume() < 500 && Consumer.consumeBrightness() < 400)
-            {
-                check = true;
-            }
-            else
-            {
-                check = false;
-            }
-            return check;
+            return (Consumer.consumeVolume() < 500 && Consumer.consumeBrightness() < 400);
         }
 
         /// <summary>
@@ -43,15 +28,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool thirdCheckRule()
         {
-            if (Consumer.consumeTemperature() > 59 && Consumer.consumeMotion())
-            {
-                check = true;
-            }
-            else
-            {
-                check = false;
-            }
-            return check;
+            return (Consumer.consumeTemperature() > 59 && Consumer.consumeMotion());
         }
 
         /// <summary>
@@ -60,14 +37,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool fourthCheckRule()
         {
-            if (Consumer.consumeVolume < 500 && Consumer.consumeMotion())
-            {
-                check = true;
-            } else
-            {
-                check = false;
-            }
-            return check;
+            return (Consumer.consumeVolume < 500 && Consumer.consumeMotion());
         }
 
         /// <summary>
@@ -76,15 +46,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool fifthCheckRule()
         {
-            if (Consumer.consumeMagneticField()<400 || Consumer.consumeMagneticField()>600)
-            {
-                check = true;
-            }
-            else
-            {
-                check = false;
-            }
-            return check;
+            return (Consumer.consumeMagneticField() < 400 || Consumer.consumeMagneticField() > 600);
         }
     }
 }
