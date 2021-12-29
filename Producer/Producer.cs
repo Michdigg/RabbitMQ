@@ -21,7 +21,13 @@ namespace RabbitMQ.Producer
             MPU6050 mPU6050 = new MPU6050();
 
             const string exchange_name = "amq.topic";                    
-            ConnectionFactory factory = new ConnectionFactory() { HostName = "localhost" };
+            ConnectionFactory factory = new ConnectionFactory() {
+                HostName = "localhost",
+                Port = 5673,
+                UserName = "user" ,
+                Password = "user" ,
+                VirtualHost = "/"
+            };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
 
