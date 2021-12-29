@@ -21,7 +21,13 @@ namespace RabbitMQ.Producer
             MPU6050 mPU6050 = new MPU6050();
 
             const string exchange_name = "amq.topic";                    
-            ConnectionFactory factory = new ConnectionFactory() { HostName = "localhost" };
+            ConnectionFactory factory = new ConnectionFactory() {
+                HostName = "localhost",
+                Port = 5673,
+                UserName = "user" ,
+                Password = "user" ,
+                VirtualHost = "/"
+            };
             var connection = factory.CreateConnection();
             var channel = connection.CreateModel();
 
@@ -32,7 +38,7 @@ namespace RabbitMQ.Producer
                 {
                     Publisher.publish(channel, exchange_name, dht11, kY_018, kY_024, kY_038, hC_SR501_PIR, _6MV2, mPU6050);
                     Console.WriteLine("-----------------------------------------------------------------------");
-                    Thread.Sleep(500);
+                    Thread.Sleep(1000);
                 }
 
             }

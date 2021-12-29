@@ -39,7 +39,7 @@ namespace Model
             throw new NotImplementedException();
         }
 
-        public override bool get_Value()
+        public override bool getBoolValue()
         {
             throw new NotImplementedException();
         }

@@ -15,55 +15,55 @@ namespace Producer
             int[] coordinatesXandY = _6MV2.getValues();
 
             channel.BasicPublish(exchange: exchange_name,
-                            routingKey: "amq.humidity",
+                            routingKey: "amq.humidity", 
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(humidityAndTemperature[1].ToString()));
+                            body: Encoding.UTF8.GetBytes("humidity " + humidityAndTemperature[1].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.temperature",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(humidityAndTemperature[0].ToString()));
+                            body: Encoding.UTF8.GetBytes("temperature " + humidityAndTemperature[0].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.coordinateX",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(coordinatesXandY[0].ToString()));
+                            body: Encoding.UTF8.GetBytes("coordinateX " + coordinatesXandY[0].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.coordinateY",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(coordinatesXandY[1].ToString()));
+                            body: Encoding.UTF8.GetBytes("coordinateY " + coordinatesXandY[1].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.brightness",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(kY_018.getValue().ToString()));
+                            body: Encoding.UTF8.GetBytes("brightness " + kY_018.getValue().ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.magneticfield",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(kY_024.getValue().ToString()));
+                            body: Encoding.UTF8.GetBytes("magneticField " + kY_024.getValue().ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.volume",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(kY_038.getValue().ToString()));
+                            body: Encoding.UTF8.GetBytes("volume " + kY_038.getValue().ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.speed",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(inclinationAndSpeed[1].ToString()));
+                            body: Encoding.UTF8.GetBytes("speed " + inclinationAndSpeed[1].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.inclination",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(inclinationAndSpeed[0].ToString()));
+                            body: Encoding.UTF8.GetBytes("inclination " + inclinationAndSpeed[0].ToString()));
             channel.BasicPublish(exchange: exchange_name,
                             routingKey: "amq.motion",
                             basicProperties: null,
                             mandatory: false,
-                            body: Encoding.UTF8.GetBytes(hC_SR501_PIR.get_Value().ToString()));
+                            body: Encoding.UTF8.GetBytes("motion " + hC_SR501_PIR.getBoolValue().ToString()));
         }
     }
 }

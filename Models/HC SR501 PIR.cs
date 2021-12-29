@@ -10,7 +10,7 @@ namespace Model
         private Random rnd = new Random();
 
         public HC_SR501_PIR() { }
-        public override bool get_Value()
+        public override bool getBoolValue()
         {
             return getMotion();
         }

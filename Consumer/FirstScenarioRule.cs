@@ -1,5 +1,4 @@
-﻿using Model;
-
+﻿
 namespace RabbitMQ.Consumer
 {
     public static class FirstScenarioRule
@@ -8,7 +7,7 @@ namespace RabbitMQ.Consumer
         /// Check the first rule (Temperature over 59°C + Brightness under 400) 
         /// </summary>
         /// <returns></returns>
-        public static bool firtCheckRule()
+        public static bool firstCheckRule()
         {
             return (Consumer.consumeTemperature() > 59 && Consumer.consumeBrightness() < 400) ;
         }
@@ -37,7 +36,7 @@ namespace RabbitMQ.Consumer
         /// <returns></returns>
         public static bool fourthCheckRule()
         {
-            return (Consumer.consumeVolume < 500 && Consumer.consumeMotion());
+            return (Consumer.consumeVolume() < 500 && Consumer.consumeMotion());
         }
 
         /// <summary>

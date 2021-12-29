@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RabbitMQ.Consumer
 {
-    public class SecondScenario
+    public static class SecondScenario
     {
         public static bool checkSecondScenario()
         {
