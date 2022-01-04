@@ -1,7 +1,7 @@
 # Auriga IoT Project
 
 ## Description
-A simple Arduino project for a prototype of IoT security device for ATMs. Let's see some examples of ATM attacks that this project aims to tackle. 
+Arduino project for a prototype of IoT security device for ATMs. 
 
 ### ATM Jackpotting
 It is a sophisticated crime in which thieves install malicious software and/or hardware on ATMs that forces the machines to dispense huge volumes of cash on demand.
@@ -24,7 +24,7 @@ This is a summarized attack process and it is not an absolute methodology to ATM
 When one of this rules is satisfied the ATM must be switched off.
 
 ### Physical Attack
-Another simple and frequent attack, especially in Apulia, is about the physical removing of ATM from the site. This is called Physical Attack. Physical attacks on ATMs are considered risky, as it not only leads to financial losses but also involves the risk to property and life. The physical attack usally involves solid and gas explosives attacks, along with physical removal of ATMs from the site and later using other techniques to gain access to the cash dispenser and safe.
+Another frequent attack is about the physical removing of ATM from the site. This is called Physical Attack. Physical attacks on ATMs are considered risky, as it not only leads to financial losses but also involves the risk to property and life. The physical attack usally involves solid and gas explosives attacks, along with physical removal of ATMs from the site and later using other techniques to gain access to the cash dispenser and safe.
 
 #### Scenario 2 - Rules
 - **Rule 1:** GPS movement detected
@@ -68,12 +68,11 @@ GSM (SIM800L evb) | GSM/GPRS sim module | ![SIM](https://encrypted-tbn0.gstatic.
 LCD (liquid crystal) | 2 rows x 16 columns LCD | ![LCD](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5fsdC_C8SFD_-icTI4li2nJbl3pOBg2RtQ&usqp=CAU)
 
 ### Schematics
-In order to ensure the full compatibility with our project, we suggest you to apply a wiring following our schematics.
 ![Arduino schematics](docs/arduino-schematics.jpg)
 
 ## RabbitMQ
 
-After you installed RabbitMQ you should already have the following default exchange (which is the default exchange for MQTT communication), if not you must create a new exchange with the following attributes:
+Exchange used:
 - **Name**: amq.topic
 - **Type**: topic
 - **Durability**: true
