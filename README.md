@@ -91,6 +91,6 @@ Queue Name | Type | Durability | Args | Binding | Description |
 ## Elastic
 
 Elastic stack configuration are available on:
--[Logstash](Logstash/)
--[ElasticSearch](Elasticsearch/)
--[Kibana](Kibana/)
+- [Logstash](Logstash/)
+- [ElasticSearch](Elasticsearch/)
+- [Kibana](Kibana/)
