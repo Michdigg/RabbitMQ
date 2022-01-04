@@ -61,7 +61,6 @@ Device Name | Description | Image |
 Light Dependent Resistor (KY-018)| Light sensitive device to indicate the presence or absence of light |![LDR](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoU-AWmfHpAG2Ut8emlK8lVdOX8DV3dBuAgg&usqp=CAU)| 
 Small sound (KY-038)| High sensitivity microphone | ![SMALLSOUND](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpsook1qgoqe9tMGWd8zpoRaXVtVrrDaie8w&usqp=CAU)|
 Linear hall (KY-024)| Magnetic field sensor | ![LINEARHALL](https://m.media-amazon.com/images/I/51dYl3lyf9L._SL500_.jpg) |
-GY-521 (MPU6050) | Gyroscope and accelerometer | ![GY-521](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8TlRLn2BiPwtlNWAN4pIl9GxZgifd7yRtw&usqp=CAU)|
 HC SR501 PIR Sensor | Simple motion sensor | ![MOTION](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0-ztFMD6WWQAurv4vxpok07YWg9vfpI0LuBDCg75cZXhaywxcmc1UaAi__uc&usqp=CAc)|
 GPS (6MV2) | GPS tracker module | ![GPS](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzIT1tedZRe3nUUl-kfZuR4E8ckIS8KJiGHQ&usqp=CAU)|
 GSM (SIM800L evb) | GSM/GPRS sim module | ![SIM](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakkzNnlgnQFMCQNuhVcdJpwKhO4Ye0DRsrw&usqp=CAU) |
