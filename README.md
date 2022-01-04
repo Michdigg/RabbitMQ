@@ -41,7 +41,7 @@ The following diagram shows the architecture that must be implemented in order t
 - A message broker used to communicate with a backend that implements the business logic (RabbitMQ).
 - A module for system monitoring (Elastic Stack).
 
-![Architecture Diagram](docs/diagrams/architecture-diagram.png)
+![Architecture Diagram](docs/architecture-diagram.png)
 
 ## Arduino
 ### Devices
@@ -69,7 +69,7 @@ LCD (liquid crystal) | 2 rows x 16 columns LCD | ![LCD](https://encrypted-tbn0.g
 
 ### Schematics
 In order to ensure the full compatibility with our project, we suggest you to apply a wiring following our schematics.
-![Arduino schematics](docs/diagrams/arduino-schematics.jpg)
+![Arduino schematics](docs/arduino-schematics.jpg)
 
 ## RabbitMQ
 
