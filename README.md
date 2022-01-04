@@ -82,10 +82,10 @@ In the following table all queues configurations are described.
 
 Queue Name | Type | Durability | Args | Binding | Description |
 ------------ | ------------- | ------------- | ------------- | ------------- | ------------- |
-**amq_brightness**| classic| true | | atm.darkness.* | Queue which interacts with Brightness sensor.<br/> Value goes from 0 LIGH to 1023 DARK |
-**amq_agneticField** | classic| true | | atm.linearhall.* | Queue which interacts with LinearHall sensor.<br/> Value goes from 0 to 1023 |
-**amq_coordinateX - amq_coordinateY** | classic| true | | atm.gps.* | Queue which interacts with GPS module.<br/> Values are Latitude and Longitude |
-**amq_volume** | classic| true | | atm.microphone.* | Queue which interacts with Small Sound sensor.<br/> Value goes from 0 to 1023 |
-**amq_motion** | classic| true | | atm.motion.* | Queue which interacts with Motion sensor.<br/> Value are 1, if movement is detected, 0 instead. |
-**amq_temperature - amq_humidity** | classic| true | | atm.temperature.* | Queue which interacts with DHT sensor.<br/> Value goes from <br/>-25 to 68 °C for Temperature and<br/> from 20 to 90 % for Humidity |
-**amq_metrics** | classic| true | | atm.# | Queue gets data from all sensors and it's used for Monitoring purpose. |
+**amq_brightness**| classic| true | | amq.brightness | Queue which interacts with Brightness sensor.<br/> Value goes from 0 LIGH to 1023 DARK |
+**amq_agneticField** | classic| true | | amq.magneticField | Queue which interacts with LinearHall sensor.<br/> Value goes from 0 to 1023 |
+**amq_coordinateX - amq_coordinateY** | classic| true | | amq.coordinateX - amq.coordinateY | Queue which interacts with GPS module.<br/> Values are Latitude and Longitude |
+**amq_volume** | classic| true | | amq.volume | Queue which interacts with Small Sound sensor.<br/> Value goes from 0 to 1023 |
+**amq_motion** | classic| true | | amq.motion | Queue which interacts with Motion sensor.<br/> Value are 1, if movement is detected, 0 instead. |
+**amq_temperature - amq_humidity** | classic| true | | amq.temperature - amq.humidity | Queue which interacts with DHT sensor.<br/> Value goes from <br/>-25 to 68 °C for Temperature and<br/> from 20 to 90 % for Humidity |
+**amq_metrics** | classic| true | | amq.* | Queue gets data from all sensors and it's used for Monitoring purpose. |
