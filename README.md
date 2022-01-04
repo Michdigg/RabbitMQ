@@ -87,3 +87,10 @@ Queue Name | Type | Durability | Args | Binding | Description |
 **amq_motion** | classic| true | | amq.motion | Queue which interacts with Motion sensor.<br/> Value are 1, if movement is detected, 0 instead. |
 **amq_temperature - amq_humidity** | classic| true | | amq.temperature - amq.humidity | Queue which interacts with DHT sensor.<br/> Value goes from <br/>-25 to 68 °C for Temperature and<br/> from 20 to 90 % for Humidity |
 **amq_metrics** | classic| true | | amq.* | Queue gets data from all sensors and it's used for Monitoring purpose. |
+
+## ElasticSearch
+
+Elasticsearch configuration are available on:
+-[Logstash Conf](logstash/)
+-[ElasticSearch Cong](elastic/)
+-[Kibana](kibana/)
