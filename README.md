@@ -1,4 +1,5 @@
 # Auriga IoT Project
+See the project on [GitHub](https://github.com/Michdigg/RabbitMQ)
 
 ## Description
 Arduino project for a prototype of IoT security device for ATMs. 
